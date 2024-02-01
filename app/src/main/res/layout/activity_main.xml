@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#E7E8E8">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageAssistant"
+                android:layout_width="114dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:contentDescription="@string/imagebutton"
+                app:srcCompat="@drawable/icon_google_assistant" />
+
+            <ImageButton
+                android:id="@+id/imageWeather"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginLeft="130dp"
+                android:backgroundTint="#E6E7E7"
+                android:contentDescription="@string/cloudy_72"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/imgweather" />
+
+            <TextView
+                android:id="@+id/textoTiempo"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:gravity="center"
+                android:text="@string/cloudy_72"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="@string/good_morning"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="20dp"
+            android:text="@string/light_traffic_ahead"
+            android:textSize="27sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNavigation"
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="7dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="7dp"
+                android:padding="5dp"
+                app:cardCornerRadius="15dp">
+
+                <ImageButton
+                    android:id="@+id/btnNavigation"
+                    android:layout_width="67dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#FEFEFE"
+                    android:scaleType="centerCrop"
+                    android:contentDescription="@string/imagebutton"
+                    android:src="@drawable/navigate"
+                     />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center"
+                    android:text="@string/navigate"
+                    android:textColor="#9E9E9E"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardCalendar"
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="7dp"
+                android:padding="5dp"
+                app:cardCornerRadius="15dp">
+
+                <ImageButton
+                    android:id="@+id/btnCalendar"
+                    android:layout_width="69dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/white"
+                    android:backgroundTint="#FEFEFE"
+                    android:contentDescription="@string/imagebutton"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/calendario" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center"
+                    android:text="@string/calendar"
+                    android:textColor="#9E9E9E"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardDrive"
+                android:layout_width="110dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:elevation="7dp"
+                android:padding="5dp"
+                app:cardCornerRadius="15dp">
+
+                <ImageButton
+                    android:id="@+id/btnDrive"
+                    android:layout_width="67dp"
+                    android:layout_height="74dp"
+                    android:layout_gravity="center_horizontal"
+                    android:backgroundTint="#FEFEFE"
+                    android:scaleType="centerCrop"
+                    android:prompt="@string/Vacio"
+                    android:contentDescription="@string/imagebutton"
+                    android:src="@drawable/drive" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:gravity="center"
+                    android:text="@string/drive"
+                    android:textColor="#9E9E9E"
+                    android:textSize="14sp" />
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="45dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/captura"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:src="@drawable/captura" />
+
+            <TextView
+                android:id="@+id/historial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/historial_del_sensei"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp">
+
+            <LinearLayout
+                android:id="@+id/LinearHistorial"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="73dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="5dp"
+                    android:background="#ffffff"
+                    android:elevation="5dp"
+                    android:padding="5dp"
+                    android:shadowColor="#5C5C5C"
+                    android:text="@string/entrar"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageButton
+                        android:id="@+id/calendario"
+                        android:layout_width="54dp"
+                        android:layout_height="54dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="-125dp"
+                        android:padding="13dp"
+                        android:contentDescription="@string/imagebutton"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/calendario" />
+
+                    <TextView
+                        android:id="@+id/accionHistorial"
+                        android:layout_width="130dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="55dp"
+                        android:layout_marginTop="-10dp"
+                        android:text="@string/AcccionHistorial"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp" />
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="InvalidId">
+
+        <ImageButton
+            android:id="@+id/btnMicrofono"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@string/micro"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/icon_microphone" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <ImageButton
+            android:id="@+id/btnBorrar"
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:contentDescription="@string/correo"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/papelera" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

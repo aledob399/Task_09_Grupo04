@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/card_view_margin_horizontal"
+    android:layout_marginTop="@dimen/card_view_margin_top"
+    android:layout_marginRight="@dimen/card_view_margin_horizontal"
+    android:layout_marginBottom="@dimen/card_view_margin_bottom"
+    app:cardBackgroundColor="#FEFEFE"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <ImageButton
+        android:id="@+id/cardButton"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="-125dp"
+        android:background="#FDFDFD"
+        android:backgroundTint="#FDFDFD"
+        android:padding="1dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/calendario" />
+
+    <TextView
+        android:id="@+id/cardTextView"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="0dp"
+        android:text="Default Text"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+</androidx.cardview.widget.CardView>

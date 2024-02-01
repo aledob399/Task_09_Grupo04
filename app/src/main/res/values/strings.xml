@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">task09_FullLayout</string>
+    <string name="light_traffic_ahead">Light traffic ahead.</string>
+    <string name="good_morning">Good morning!</string>
+    <string name="weather">Weather</string>
+    <string name="calendar">Calendar</string>
+    <string name="navigate">Navigate</string>
+    <string name="cloudy_72">Cloudy 72º</string>
+    <string name="drive">drive</string>
+    <string name="historial_del_sensei">Historial del sensei</string>
+    <string name="entrar">entrar</string>
+    <string name="AcccionHistorial">"Accion "</string>
+    <string name="micro">micro</string>
+    <string name="correo">correo</string>
+    <string name="Vacio"></string>
+    <string name="imagebutton">Es un ImageButton</string>
+</resources>
