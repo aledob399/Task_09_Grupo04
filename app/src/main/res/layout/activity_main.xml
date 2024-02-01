@@ -188,7 +188,7 @@
                 android:id="@+id/captura"
                 android:layout_width="28dp"
                 android:layout_height="28dp"
-                android:src="@drawable/captura" />
+                android:src="@drawable/master" />
 
             <TextView
                 android:id="@+id/historial"
