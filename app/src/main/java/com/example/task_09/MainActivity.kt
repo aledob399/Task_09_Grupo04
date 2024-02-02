@@ -5,6 +5,7 @@ import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.os.Build
 import android.os.Bundle
 import android.speech.RecognizerIntent
 import android.util.TypedValue
@@ -15,8 +16,11 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.cardview.widget.CardView
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 import java.util.Locale
 
 
@@ -138,7 +142,9 @@ class MainActivity : AppCompatActivity() {
 
         val cardTextView = cardView.findViewById<TextView>(R.id.cardTextView)
 
+        val textoHora = cardView.findViewById<TextView>(R.id.fecha)
 
+        textoHora.text=obtenerFechaYHoraActual()
 
         val layoutParams = LinearLayout.LayoutParams(
 
@@ -203,6 +209,17 @@ class MainActivity : AppCompatActivity() {
                 cardTextView.text = "Página web"
             }
         }
+    }
+    @RequiresApi(Build.VERSION_CODES.O)
+    fun obtenerFechaYHoraActual(): String {
+        // Obtener la fecha y hora actual
+        val fechaYHoraActual = LocalDateTime.now()
+
+        // Formatear la fecha y hora
+        val formato = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
+        val fechaYHoraFormateada = fechaYHoraActual.format(formato)
+
+        return fechaYHoraFormateada
     }
 
 }

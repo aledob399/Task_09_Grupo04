@@ -91,15 +91,22 @@
                 android:padding="5dp"
                 app:cardCornerRadius="15dp">
 
+                <!--android:src="@drawable/navigate"-->
+
+
+
                 <ImageButton
                     android:id="@+id/btnNavigation"
-                    android:layout_width="67dp"
-                    android:layout_height="74dp"
+                    android:layout_width="66dp"
+                    android:layout_height="68dp"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="#FEFEFE"
-                    android:scaleType="centerCrop"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/primary_color"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_location"
                     android:contentDescription="@string/imagebutton"
-                    android:src="@drawable/navigate" />
+
+                    ></ImageButton>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -125,14 +132,16 @@
 
                 <ImageButton
                     android:id="@+id/btnCalendar"
-                    android:layout_width="69dp"
-                    android:layout_height="74dp"
+                    android:layout_width="66dp"
+                    android:layout_height="68dp"
                     android:layout_gravity="center_horizontal"
-                    android:background="@color/white"
-                    android:backgroundTint="#FEFEFE"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/primary_color"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/icon_calendar"
                     android:contentDescription="@string/imagebutton"
-                    android:scaleType="centerCrop"
-                    android:src="@drawable/calendario" />
+
+                    ></ImageButton>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -158,14 +167,16 @@
 
                 <ImageButton
                     android:id="@+id/btnDrive"
-                    android:layout_width="67dp"
-                    android:layout_height="74dp"
+                    android:layout_width="66dp"
+                    android:layout_height="68dp"
                     android:layout_gravity="center_horizontal"
-                    android:backgroundTint="#FEFEFE"
-                    android:scaleType="centerCrop"
-                    android:prompt="@string/Vacio"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/round_corner"
+                    android:backgroundTint="@color/primary_color"
                     android:contentDescription="@string/imagebutton"
-                    android:src="@drawable/drive" />
+                    android:src="@drawable/icon_drive"
+
+                    ></ImageButton>
 
                 <TextView
                     android:layout_width="match_parent"
@@ -272,7 +283,8 @@
 
         <ImageButton
             android:id="@+id/btnMicrofono"
-            android:layout_width="64dp"
+            android:layout_width="104dp"
+            android:padding="10dp"
             android:layout_height="match_parent"
             android:background="@null"
             android:contentDescription="@string/micro"
@@ -286,11 +298,12 @@
 
         <ImageButton
             android:id="@+id/btnBorrar"
-            android:layout_width="64dp"
+            android:layout_width="104dp"
+            android:padding="11dp"
             android:layout_height="match_parent"
             android:background="@null"
             android:contentDescription="@string/correo"
             android:scaleType="fitCenter"
-            app:srcCompat="@drawable/papelera" />
+            app:srcCompat="@drawable/icon_delete" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
